@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frontend</title>
+</head>
+<body>
+  <center>
+    <h1 style="color: blueviolet;">Hello from Nginx Frontend!</h1>
+    <p>Backend API URL : <span id="api-url"></span></p>
+
+    <script>
+        const apiUrl = "${API_URL}";
+        document.getElementById("api-url").textContent = apiUrl;
+    </script>
+  </center>
+</body>
+</html>
